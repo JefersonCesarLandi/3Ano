@@ -47,6 +47,7 @@ public class CheckBoxDemo extends JPanel
     JCheckBox glassesButton;
     JCheckBox hairButton;
     JCheckBox teethButton;
+    JCheckBox chapelButton;
 
     /*
      * Four accessory choices provide for 16 different
@@ -102,15 +103,20 @@ public class CheckBoxDemo extends JPanel
         teethButton = new JCheckBox("Teeth");
         teethButton.setMnemonic(KeyEvent.VK_T);
         teethButton.setSelected(true);
+        
+        teethButton = new JCheckBox("Chapel");
+        teethButton.setMnemonic(KeyEvent.VK_N);
+        teethButton.setSelected(true);
 
         //Register a listener for the check boxes.
         chinButton.addItemListener(this);
         glassesButton.addItemListener(this);
         hairButton.addItemListener(this);
         teethButton.addItemListener(this);
+        chapelButton.addItemListener(this);
 
         //Indicates what's on the geek.
-        choices = new StringBuffer("cght-");
+        choices = new StringBuffer("cghtn");
 
         //Set up the picture label
         pictureLabel = new JLabel();
@@ -123,6 +129,7 @@ public class CheckBoxDemo extends JPanel
         checkPanel.add(glassesButton);
         checkPanel.add(hairButton);
         checkPanel.add(teethButton);
+        checkPanel.add(chapelButton);
 
         add(checkPanel, BorderLayout.LINE_START);
         add(pictureLabel, BorderLayout.CENTER);
@@ -147,7 +154,9 @@ public class CheckBoxDemo extends JPanel
         } else if (source == teethButton) {
             index = 3;
             c = 't';
-        }
+        } else if (source == chapelButton)
+            index = 4;
+            c = 'n';
 
         //Now that we know which button was pushed, find out
         //whether it was selected or deselected.
