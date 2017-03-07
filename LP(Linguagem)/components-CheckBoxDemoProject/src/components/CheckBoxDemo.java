@@ -110,7 +110,7 @@ public class CheckBoxDemo extends JPanel
         teethButton.addItemListener(this);
 
         //Indicates what's on the geek.
-        choices = new StringBuffer("cght");
+        choices = new StringBuffer("cght-");
 
         //Set up the picture label
         pictureLabel = new JLabel();
