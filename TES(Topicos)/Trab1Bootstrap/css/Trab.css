@@ -26,3 +26,15 @@ nav{
     position: relative;
     top: 10%;
 }
+
+.menu-item{
+    height: 100%;
+    border: 1px solid black;
+    background: rebeccapurple;
+}
+
+.conteudo{
+    background: rebeccapurple;
+    height: 500px;
+    margin-top: 4px;
+}
