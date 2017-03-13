@@ -1,0 +1,28 @@
+header{
+	height: 80px;
+	background-color: #808080;
+    
+}
+
+.logo{
+    height: 80%;
+    background: blue;
+    position: relative;
+    top: 10%;
+
+}
+
+nav{
+    height: 80%;
+    background: purple;
+    position: relative;
+    top: 10%;
+
+}
+
+.Search{
+    height: 80%;
+    background: red;
+    position: relative;
+    top: 10%;
+}
