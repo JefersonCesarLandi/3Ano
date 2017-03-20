@@ -24,6 +24,16 @@ nav{
     top: 10%;
 }
 
+.Search-input{
+    top: 26%;
+    height: 48%;
+    border: solid white;
+}
+
+.menu{
+    padding-left: 0.0% !important;
+    padding-right: 0.0% !important;
+}
 .menu-item{
     height: 100%;
     border: 1px solid black;
